@@ -17,7 +17,7 @@ In more detail: the input file had one data node per row, and the aim is to comb
 ### Notes
 
 - With pandas.merge one needs to be careful with the order of the columns, when doing many consecutive merges.
-- As I timeboxed my work (still going over the recommended 2h!) I didn't have a chance to run the test using Github Actions and get the coverage. I run my tests locally and they all passed.
+- ~~As I timeboxed my work (still going over the recommended 2h!) I didn't have a chance to run the test using Github Actions and get the coverage. I run my tests locally and they all passed.~~ (now running)
 
 ## Improvements
 
