@@ -1,9 +1,11 @@
+![hestia-practice](https://github.com/Amine-Chakhchoukh/hestia-practice/actions/workflows/pythonpackage/badge.svg)
+
 # Hestia technical assessment
 Hestia's Tech Task
 
 ## The task
 
-A python script that takes a sparsly populated dataframe and outputs a more condensed one.
+A python script that takes a sparsely populated dataframe and outputs a more condensed one.
 In more detail: the input file had one data node per row, and the aim is to combine related data nodes into rows for ease of reading/usage.
 
 ## Chosen approach
@@ -26,4 +28,4 @@ A few things come to mind here:
  
 The above approach is simple enough and has the advantage of not worrying about the merge order. One disadvantage I suspect is time of execution. Testing how long this would take in practice would be helpful as a comparison.
 
-- Adding coverage and having tests run when changes are pushed using Github Actions.
+- Adding coverage and ~~having tests run when changes are pushed using Github Actions.~~ (now running)
