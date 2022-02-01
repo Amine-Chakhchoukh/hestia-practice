@@ -1,4 +1,5 @@
 ![hestia-practice](https://github.com/Amine-Chakhchoukh/hestia-practice/actions/workflows/pythonpackage.yml/badge.svg)
+[![codecov](https://codecov.io/gh/Amine-Chakhchoukh/hestia-practice/branch/main/graph/badge.svg?token=1P2LQKKPE1)](https://codecov.io/gh/Amine-Chakhchoukh/hestia-practice)
 
 # Hestia technical assessment
 Hestia's Tech Task
@@ -28,4 +29,4 @@ A few things come to mind here:
  
 The above approach is simple enough and has the advantage of not worrying about the merge order. One disadvantage I suspect is time of execution. Testing how long this would take in practice would be helpful as a comparison.
 
-- Adding coverage and ~~having tests run when changes are pushed using Github Actions.~~ (now running)
+- ~~Adding coverage and having tests run when changes are pushed using Github Actions.~~ (now running)
