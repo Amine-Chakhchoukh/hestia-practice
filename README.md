@@ -1,4 +1,4 @@
-![hestia-practice](https://github.com/Amine-Chakhchoukh/hestia-practice/actions/workflows/pythonpackage/badge.svg)
+![hestia-practice](https://github.com/Amine-Chakhchoukh/hestia-practice/actions/workflows/pythonpackage.yml/badge.svg)
 
 # Hestia technical assessment
 Hestia's Tech Task
