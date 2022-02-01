@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from pandas.testing import assert_frame_equal
 
 
 def improve_format(path, terms_to_merge_on, out_name="output.csv"):

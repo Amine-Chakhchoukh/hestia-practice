@@ -1,4 +1,3 @@
-import pytest
 import pandas as pd
 import numpy as np
 from pandas._testing import assert_frame_equal
@@ -87,14 +86,6 @@ class TestDoSelfMerge(object):
         test_argument_1 = pd.DataFrame({'A.id': [1, 2, 3], 'B.id.source': [False, True, True], 'C.id': [12, 'e', None],
                                         'D.source.id': [2.4, 0, 'q'], 'E.identification': [3, 3, 45]})
         test_argument_2 = ['A.id']
-        test_argument_3 = []
-        assert_frame_equal(do_self_merge(test_argument_1, test_argument_2, test_argument_3), test_argument_1)
-
-    def test_merge_on_empty_lists(self):
-        test_argument_1 = pd.DataFrame(
-            {'A.id': [1, 2, 3], 'B.id.source': [False, True, True], 'C.id': [12, 'e', None],
-             'D.source.id': [2.4, 0, 'q'], 'E.identification': [3, 3, 45]})
-        test_argument_2 = []
         test_argument_3 = []
         assert_frame_equal(do_self_merge(test_argument_1, test_argument_2, test_argument_3), test_argument_1)
 
