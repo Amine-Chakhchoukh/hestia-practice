@@ -1,5 +1,7 @@
 name: CodeCov
+
 on: push
+
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -8,16 +10,22 @@ jobs:
       PYTHON: '3.8'
     steps:
     - uses: actions/checkout@master
+
     - name: Setup Python
       uses: actions/setup-python@master
       with:
         python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        # $CONDA is an environment variable pointing to the root of the miniconda directory
+        conda env update --file environment.yml --name base
+
     - name: 'generate report'
       run: |
-        pip install coverage
-        pip install pytest
-        pip install pandas
-        coverage run -m pytest
+        $CONDA/bin/coverage run -m pytest
+        $CONDA/bin/coverage xml
+
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
       with:
